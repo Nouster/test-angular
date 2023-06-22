@@ -1,0 +1,16 @@
+<section class="container mt-5">
+  <div class="row gap-3 justify-content-center">
+    <div
+      class="d-flex flex-column gap-3 col-md-3 border border-black p-5 rounded-4"
+      *ngFor="let product of products"
+    >
+      {{ product.name }}
+      {{ product.productType }}
+      <div>{{ product.description }}</div>
+
+      <button routerLink="/DetailedComponent" class="col-md-6 btn btn-primary">
+        Voir le détail
+      </button>
+    </div>
+  </div>
+</section>
