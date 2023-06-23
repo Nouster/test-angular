@@ -1,0 +1,11 @@
+<h2 class="text-center">Our orders</h2>
+
+<section class="container">
+  <div class="row">
+    <div *ngFor="let order of orders" class="col-md-3">
+      {{ order.clientID }}
+      {{ order.creationDateTime }}
+      {{ order.lastModifiedDateTime }}
+    </div>
+  </div>
+</section>
